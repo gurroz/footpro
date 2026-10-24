@@ -171,4 +171,7 @@ fastlane/Appfile.gradle
 .expo/
 dist/
 web-build/
+/test-results/
+/playwright-report/
+/blob-report/
 
