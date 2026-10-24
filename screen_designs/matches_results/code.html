@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Match Schedule - The Pitch Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#b9eeab",
+                        "surface": "#f5f6ff",
+                        "secondary-container": "#d3ddf2",
+                        "tertiary-fixed": "#69f6b8",
+                        "on-tertiary": "#c8ffe0",
+                        "primary": "#386631",
+                        "on-tertiary-fixed": "#00452d",
+                        "tertiary-fixed-dim": "#58e7ab",
+                        "on-secondary-fixed": "#323c4c",
+                        "surface-dim": "#c9d4f2",
+                        "surface-bright": "#f5f6ff",
+                        "tertiary-dim": "#005c3d",
+                        "on-background": "#282f3f",
+                        "on-primary": "#d2ffc4",
+                        "primary-fixed-dim": "#abdf9e",
+                        "outline-variant": "#a6adc1",
+                        "surface-container-highest": "#d3dcf9",
+                        "on-surface": "#282f3f",
+                        "secondary-dim": "#465061",
+                        "on-tertiary-fixed-variant": "#006544",
+                        "background": "#f5f6ff",
+                        "tertiary-container": "#69f6b8",
+                        "tertiary": "#006947",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#525c6d",
+                        "surface-container-high": "#d9e2fd",
+                        "primary-fixed": "#b9eeab",
+                        "on-tertiary-container": "#005a3c",
+                        "primary-dim": "#2d5927",
+                        "on-secondary-fixed-variant": "#4e5869",
+                        "outline": "#707789",
+                        "error-dim": "#b92902",
+                        "error": "#b02500",
+                        "surface-variant": "#d3dcf9",
+                        "error-container": "#f95630",
+                        "on-secondary-container": "#454f5f",
+                        "inverse-surface": "#070e1d",
+                        "surface-tint": "#386631",
+                        "on-primary-container": "#2d5a27",
+                        "primary-container": "#b9eeab",
+                        "on-surface-variant": "#545b6d",
+                        "on-primary-fixed-variant": "#376430",
+                        "secondary-fixed-dim": "#c5cfe3",
+                        "on-error": "#ffefec",
+                        "secondary-fixed": "#d3ddf2",
+                        "on-secondary": "#eef3ff",
+                        "inverse-on-surface": "#969db0",
+                        "on-primary-fixed": "#1a4716",
+                        "on-error-container": "#520c00",
+                        "surface-container-low": "#edf0ff",
+                        "surface-container": "#e1e8ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Lexend"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pitch-texture {
+            background-image: radial-gradient(circle at 2px 2px, rgba(166, 173, 193, 0.15) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 12px 32px rgba(40, 47, 63, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 h-16 bg-[#f5f6ff] dark:bg-[#1a1c1e] z-50 tonal-layering">
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#2D5A27] dark:text-[#b9eeab] hover:bg-[#d9e2fd]/50 transition-all rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-[#282f3f] dark:text-[#e2e2e6] text-xl">Match Schedule</h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border-2 border-white">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="professional soccer coach profile avatar close up with stadium lights in background soft bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByx--HbCCvmPKOSJVwc4jokZkKH-H2itXEwq99tcP5Ze-qjU9zp4buThYtVZVPqHs4GBGDe4NKTniG10Yj9SiGxX21FcDnuFXhZyYO0sWotZjx-r1-T1X-n8dgePKazJ1m-oQ_qcWCoRAGo1Kq1MNwlYoPfBxczcJWftgse_k7YDZi57Swm6nGnq_uILnI8nq0YXrEGdsX11o0snH6nvScT0psNKBhk3FbeQtTinzGoRto-SzSSPn1c8kYt64frPRtu0C4rDRHMUg"/>
+</div>
+</div>
+</header>
+<main class="pt-20 pb-32 px-4 max-w-4xl mx-auto pitch-texture min-h-screen">
+<!-- Upcoming Matches Section -->
+<section class="mb-10">
+<div class="flex items-end justify-between mb-6 px-2">
+<div>
+<span class="font-label text-[11px] font-medium tracking-widest uppercase text-primary mb-1 block">Tactical Forecast</span>
+<h2 class="font-headline text-3xl font-black tracking-tight text-on-surface">Upcoming</h2>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+</button>
+</div>
+</div>
+<div class="space-y-4">
+<!-- Upcoming Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden group">
+<div class="flex items-center p-6 relative">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-primary-container text-on-primary-container font-label text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Away</span>
+</div>
+<div class="flex-1 flex items-center gap-6">
+<div class="relative">
+<div class="w-16 h-16 bg-surface-container-low rounded-xl flex items-center justify-center -rotate-3 group-hover:rotate-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="shield">shield</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Everton United</h3>
+<p class="font-label text-sm text-on-surface-variant flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+                                    Goodison Park, Liverpool
+                                </p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-2xl font-black text-primary">OCT 24</div>
+<div class="font-label text-sm font-medium text-on-surface-variant">20:45 GMT</div>
+</div>
+</div>
+<div class="bg-surface-container-low h-10 flex items-center px-6 gap-4">
+<span class="font-label text-[11px] font-bold text-outline uppercase tracking-widest">Tactical Prep:</span>
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface-container-low bg-surface-container-highest"></div>
+<div class="w-6 h-6 rounded-full border-2 border-surface-container-low bg-primary"></div>
+<div class="w-6 h-6 rounded-full border-2 border-surface-container-low bg-tertiary"></div>
+</div>
+</div>
+</div>
+<!-- Upcoming Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden group">
+<div class="flex items-center p-6 relative">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-surface-container-highest text-on-surface font-label text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Home</span>
+</div>
+<div class="flex-1 flex items-center gap-6">
+<div class="relative">
+<div class="w-16 h-16 bg-surface-container-low rounded-xl flex items-center justify-center rotate-2 group-hover:rotate-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary" data-icon="sports_soccer">sports_soccer</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Red Hawks FC</h3>
+<p class="font-label text-sm text-on-surface-variant flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+                                    PitchMaster Arena
+                                </p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-2xl font-black text-primary">OCT 28</div>
+<div class="font-label text-sm font-medium text-on-surface-variant">15:00 GMT</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Past Results Section -->
+<section>
+<div class="flex items-end justify-between mb-6 px-2">
+<div>
+<span class="font-label text-[11px] font-medium tracking-widest uppercase text-on-surface-variant mb-1 block">Recent History</span>
+<h2 class="font-headline text-3xl font-black tracking-tight text-on-surface">Past</h2>
+</div>
+<button class="font-label text-[11px] font-bold text-primary uppercase tracking-widest hover:underline">Full Archive</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Result Card 1 -->
+<div class="bg-surface-container-low rounded-xl p-5 flex items-center justify-between border-l-4 border-tertiary">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center editorial-shadow">
+<span class="material-symbols-outlined text-2xl text-on-surface-variant" data-icon="token">token</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Brighton</h4>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-wider">Oct 18 • Premier</p>
+</div>
+</div>
+<div class="text-center bg-surface-container-lowest px-4 py-2 rounded-lg editorial-shadow">
+<span class="font-headline text-xl font-black text-tertiary tracking-tighter">2 - 1</span>
+</div>
+</div>
+<!-- Result Card 2 -->
+<div class="bg-surface-container-low rounded-xl p-5 flex items-center justify-between border-l-4 border-error">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center editorial-shadow">
+<span class="material-symbols-outlined text-2xl text-on-surface-variant" data-icon="diamond">diamond</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Man City</h4>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-wider">Oct 12 • Cup</p>
+</div>
+</div>
+<div class="text-center bg-surface-container-lowest px-4 py-2 rounded-lg editorial-shadow">
+<span class="font-headline text-xl font-black text-error-dim tracking-tighter">0 - 3</span>
+</div>
+</div>
+<!-- Result Card 3 -->
+<div class="bg-surface-container-low rounded-xl p-5 flex items-center justify-between border-l-4 border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center editorial-shadow">
+<span class="material-symbols-outlined text-2xl text-on-surface-variant" data-icon="hive">hive</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Brentford</h4>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-wider">Oct 05 • Premier</p>
+</div>
+</div>
+<div class="text-center bg-surface-container-lowest px-4 py-2 rounded-lg editorial-shadow">
+<span class="font-headline text-xl font-black text-on-surface-variant tracking-tighter">1 - 1</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Action Button Contextual (Book a Pitch/Match) -->
+<button class="fixed bottom-28 right-6 w-14 h-14 rounded-full bg-gradient-to-br from-[#386631] to-[#b9eeab] text-white shadow-lg flex items-center justify-center active:scale-95 transition-transform z-40">
+<span class="material-symbols-outlined text-3xl" data-icon="add">add</span>
+</button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 dark:bg-[#1a1c1e]/70 backdrop-blur-xl rounded-t-[24px] shadow-[0px_-12px_32px_rgba(40,47,63,0.06)]">
+<!-- Teams Tab -->
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="groups">groups</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Teams</span>
+</a>
+<!-- Players Tab -->
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person_search">person_search</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Players</span>
+</a>
+<!-- Matches Tab (ACTIVE) -->
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#386631] to-[#b9eeab] text-white rounded-full px-5 py-1.5 scale-110 duration-200 cubic-bezier(0.34, 1.56, 0.64, 1)" href="#">
+<span class="material-symbols-outlined mb-0.5" data-icon="sports_soccer" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Matches</span>
+</a>
+<!-- Settings Tab -->
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Settings</span>
+</a>
+</nav>
+</body></html>

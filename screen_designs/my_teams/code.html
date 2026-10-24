@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Teams - The Pitch Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary-dim": "#2d5927",
+                "error": "#b02500",
+                "primary": "#386631",
+                "error-dim": "#b92902",
+                "primary-fixed": "#b9eeab",
+                "surface-container-highest": "#d3dcf9",
+                "outline-variant": "#a6adc1",
+                "on-secondary-fixed-variant": "#4e5869",
+                "on-tertiary-fixed-variant": "#006544",
+                "tertiary-fixed-dim": "#58e7ab",
+                "on-secondary": "#eef3ff",
+                "on-primary": "#d2ffc4",
+                "primary-container": "#b9eeab",
+                "surface-dim": "#c9d4f2",
+                "on-secondary-container": "#454f5f",
+                "on-error-container": "#520c00",
+                "surface-tint": "#386631",
+                "on-secondary-fixed": "#323c4c",
+                "on-surface-variant": "#545b6d",
+                "on-primary-container": "#2d5a27",
+                "surface-variant": "#d3dcf9",
+                "tertiary-dim": "#005c3d",
+                "inverse-surface": "#070e1d",
+                "inverse-on-surface": "#969db0",
+                "background": "#f5f6ff",
+                "primary-fixed-dim": "#abdf9e",
+                "surface-container-low": "#edf0ff",
+                "surface-bright": "#f5f6ff",
+                "on-primary-fixed-variant": "#376430",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary-container": "#005a3c",
+                "secondary-container": "#d3ddf2",
+                "surface-container": "#e1e8ff",
+                "tertiary-fixed": "#69f6b8",
+                "on-tertiary": "#c8ffe0",
+                "on-background": "#282f3f",
+                "on-primary-fixed": "#1a4716",
+                "on-tertiary-fixed": "#00452d",
+                "secondary-dim": "#465061",
+                "surface": "#f5f6ff",
+                "error-container": "#f95630",
+                "secondary-fixed": "#d3ddf2",
+                "inverse-primary": "#b9eeab",
+                "outline": "#707789",
+                "on-error": "#ffefec",
+                "tertiary-container": "#69f6b8",
+                "secondary-fixed-dim": "#c5cfe3",
+                "on-surface": "#282f3f",
+                "surface-container-high": "#d9e2fd",
+                "secondary": "#525c6d",
+                "tertiary": "#006947"
+              },
+              fontFamily: {
+                "headline": ["Lexend"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-grass-gradient {
+            background: linear-gradient(135deg, #386631 0%, #b9eeab 100%);
+        }
+        .ambient-shadow {
+            shadow: 0px 12px 32px rgba(40, 47, 63, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 h-16 bg-[#f5f6ff] dark:bg-[#1a1c1e] z-50 transition-colors duration-300">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2D5A27] dark:text-[#b9eeab]" data-icon="menu">menu</span>
+<h1 class="font-['Lexend'] font-black uppercase tracking-widest text-xl text-[#2D5A27] dark:text-[#b9eeab]">The Pitch</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-highest/50">
+<span class="material-symbols-outlined text-on-surface" data-icon="search">search</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional soccer coach in a modern athletic polo shirt, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5phsKLhV42vehVz1eUziI4vej8FBW7vRR97b7QGALavPV3H4LrswuRWifNTS24JreexwJm3QX79EFLUH9sQtyp5nIId0uKHYel62HjL5WZWMKGllKw5MUd0ZSQ1-1s_1koQqIGsJI-9N-nCi2LoyIHRYpqq5kF5sCckdETcg8f-FuvHpR8TC36sXFR1TPZ2d7oMJGeI6b944yFsKyyjD6wXXgKwjnXJS1bWDjg4DI2G4KEsRVmuVnFN2AwrRxJERQ04T_4pGZ7q0"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 space-y-8">
+<!-- Dashboard Header -->
+<div class="flex items-center justify-between">
+<div class="space-y-1">
+<h2 class="font-headline font-black text-4xl tracking-tight text-on-background uppercase">My Teams</h2>
+<p class="font-label text-on-surface-variant text-sm tracking-wider">SEASON 2024/25</p>
+</div>
+<button class="bg-grass-gradient w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg Active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<!-- Team Lists: Bento-style Cards -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Team Card 1 -->
+<div class="relative group">
+<div class="absolute -top-2 -left-2 w-16 h-16 bg-surface-container-lowest rounded-xl z-10 flex items-center justify-center shadow-[0px_12px_32px_rgba(40,47,63,0.06)] overflow-hidden">
+<img alt="Team Logo" class="w-10 h-10 object-contain" data-alt="professional minimalist football club crest featuring a stylized eagle and shield in navy and gold" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNPArLki2-N7z2PMQ2lKl-zufK5QirriUObhSu28P4k55p2fITX06m5zCi1ZkcmgdgCA8MyDL3uoMHYqEUbxl7S9QvXYd-Znt6PY-APq0Yvt1B4PuyqVvit9zHq0E3B_1hgMEZhY2NXD9DP72F4WWo_VRwFne0xEgqYi02ShmqA2rwhnRungtqnj9Mq7Cc3PTTKKKeXWESWF8Zbai391AxEDU9gQsTZtqUQtLNPnG9SRyeUDJCXQIwdM1pYVh5pWgtd7PWipooVog"/>
+</div>
+<div class="bg-surface-container-lowest p-6 pt-10 rounded-full shadow-[0px_12px_32px_rgba(40,47,63,0.06)] relative overflow-hidden flex items-center justify-between group-hover:bg-surface-container-low transition-colors duration-300">
+<div class="space-y-1">
+<h3 class="font-headline font-extrabold text-2xl text-on-background">North Star Elite</h3>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="groups">groups</span>
+<span class="font-label text-xs font-semibold tracking-widest text-on-surface-variant uppercase">24 Players Active</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="font-headline font-black text-primary text-3xl">#01</span>
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface-container-lowest bg-surface-container-highest overflow-hidden">
+<img alt="Player" data-alt="action shot of a soccer player headshot with focused expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOwBtrdykG-EpSAOkDTDHuHlCFObnPHDtmqtWIL9TA0FaiOuAxSXmpZHYa6dLO8LIQ9cUQmM1r0KTK0zgvIRO_UDJLLpUNfKSlV4Lu0Xj2FTDm1fMzRYPzn_KpyTmm61U0b1r-8vGZwo2MlBxmi1GEfoeeKe9z7RU9Ib_NcF9ZVS2SpnuILA8gdU9wzxfG0lKqlLemNxqmrBjBQa3vbPYsLziVXsCjVlvvK63UmBj92-o5NIx1-1uAvCuEFvE6cIjH6InnGLH4vg4"/>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-surface-container-lowest bg-surface-container-highest overflow-hidden">
+<img alt="Player" data-alt="portrait of a young female athlete with athletic headband" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCobsh6o49y5OaCnh7ZrElwfo851pMzVhCAl4XVC_K5b3A-IYQ0VQkCYpRZM_XTyCSp3NGMESBRC8PVVbzj4Sa2tUt9WdXTKPtCQwExgMkDLvRqQqBsL9J5zwMZqRxjhS1LqMF8pS3PyBZ0q8j-PJRCm_bdhgK4Toiy9PT7yrhPT8WERaZtF0zrDQwS2Yz_PAd4KC29yUU2mBMq4ATF1QKN_Ryh1-0eChIt00FYzfM7C6O7Zqjc7mPeUDoZoi4ogNZ7IdbXBM8Mj8U"/>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-surface-container-lowest bg-surface-container-highest flex items-center justify-center text-[8px] font-bold bg-primary-container text-on-primary-container">
+                                +22
+                            </div>
+</div>
+</div>
+<!-- Decorative background element -->
+<div class="absolute -right-4 -bottom-4 opacity-5">
+<span class="material-symbols-outlined text-[120px]" data-icon="sports_soccer">sports_soccer</span>
+</div>
+</div>
+</div>
+<!-- Team Card 2 -->
+<div class="relative group">
+<div class="absolute -top-2 -left-2 w-16 h-16 bg-surface-container-lowest rounded-xl z-10 flex items-center justify-center shadow-[0px_12px_32px_rgba(40,47,63,0.06)] overflow-hidden">
+<img alt="Team Logo" class="w-10 h-10 object-contain" data-alt="modern sports badge with a stylized lightning bolt and dark green accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiA_6wrSLUNYkNfnezVxbbI9QfP5lh3iyVlxGVPptTHs5OgsXRomhoJOecIJp4ax07VS6GbaLvpiO_P23xpONRGZfhJRHTvwd91wiCX0DRk-yEOArBqwW6oW6dAI9Tyo5b1L9IIXapaRbaB5K7n0wHEQiurxfVwF_Lrpamz_-Z8qrSb00TkQK7XfTkNFT8wGAzPqsqzou9jfZq_4BY5mfrilR_I9p-Ye28iFvZREJuquXDPBpDmO_vbHFzgmVukhSjw07XKXREEzA"/>
+</div>
+<div class="bg-surface-container-lowest p-6 pt-10 rounded-full shadow-[0px_12px_32px_rgba(40,47,63,0.06)] relative overflow-hidden flex items-center justify-between group-hover:bg-surface-container-low transition-colors duration-300">
+<div class="space-y-1">
+<h3 class="font-headline font-extrabold text-2xl text-on-background">Vanguard U-19</h3>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="groups">groups</span>
+<span class="font-label text-xs font-semibold tracking-widest text-on-surface-variant uppercase">18 Players Active</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="font-headline font-black text-on-surface-variant text-3xl">#02</span>
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface-container-lowest bg-surface-container-highest overflow-hidden">
+<img alt="Player" data-alt="professional athlete profile picture high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyvnCVc3nk2ToxLOcfBfZU-H4B4cbRYKVgePsSrGD7y1MWIdzobNz7jJHON7_i9TU7IWC-ibfWCLD6B9ekD9jqSBE67lezUkDTxB1wOqCToaeubUTY-c4exI-LoY3VXMfqLnlbiYJVds2ljDGH4nOoOYDh7_dOGrHgX6dSJZEEAYpF9UFIanSb3ppkRWmfGvB4fZITWaK9IAZmBSi1mRqOsyupG9TQKkBw40dk7OhgZzaGw1w1Lc0297y30x2OwI8ZDwUKQCX2hrY"/>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-surface-container-lowest bg-surface-container-highest flex items-center justify-center text-[8px] font-bold bg-primary-container text-on-primary-container">
+                                +17
+                            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Card 3 (Empty/Ghost State for visual balance) -->
+<div class="bg-surface-container-low border-2 border-dashed border-outline-variant/30 p-8 rounded-full flex flex-col items-center justify-center space-y-3 opacity-60">
+<span class="material-symbols-outlined text-4xl text-outline-variant" data-icon="add_circle">add_circle</span>
+<p class="font-label text-xs font-bold tracking-[0.2em] text-outline-variant uppercase text-center">Establish New Tactical Unit</p>
+</div>
+</div>
+<!-- Tactical Overview Section (Tonal Shifting) -->
+<section class="mt-12 p-6 bg-surface-container-low rounded-xl space-y-4">
+<h4 class="font-headline font-black text-xl text-on-background uppercase tracking-tight">Active Strategy</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-[0px_4px_16px_rgba(0,0,0,0.02)]">
+<span class="font-label text-[10px] text-on-surface-variant tracking-[0.1em] uppercase block mb-1">Total Assets</span>
+<span class="font-headline font-black text-2xl text-primary">42</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-[0px_4px_16px_rgba(0,0,0,0.02)]">
+<span class="font-label text-[10px] text-on-surface-variant tracking-[0.1em] uppercase block mb-1">Avg. Readiness</span>
+<span class="font-headline font-black text-2xl text-primary">94%</span>
+</div>
+</div>
+<!-- Visual Pitch Overlay (Fragment) -->
+<div class="relative h-24 bg-tertiary rounded-xl overflow-hidden mt-4">
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 border-2 border-white/20 rounded-full"></div>
+<div class="absolute left-0 top-0 bottom-0 w-8 border-r-2 border-white/20"></div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-tertiary via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-4">
+<span class="font-label text-[10px] text-white/70 uppercase tracking-widest font-bold">Tactical Canvas Live</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 dark:bg-[#1a1c1e]/70 backdrop-blur-xl rounded-t-[24px] shadow-[0px_-12px_32px_rgba(40,47,63,0.06)]">
+<!-- Teams (Active) -->
+<a class="flex flex-col items-center justify-center bg-grass-gradient text-white rounded-full px-5 py-1.5 Active:scale-110 duration-200 cubic-bezier(0.34, 1.56, 0.64, 1)" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Teams</span>
+</a>
+<!-- Players -->
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] dark:hover:text-[#b9eeab] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person_search">person_search</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Players</span>
+</a>
+<!-- Settings -->
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] dark:hover:text-[#b9eeab] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Settings</span>
+</a>
+</nav>
+</body></html>

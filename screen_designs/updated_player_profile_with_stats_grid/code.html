@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Player Details - The Pitch Editorial</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-dim": "#2d5927",
+              "error": "#b02500",
+              "primary": "#386631",
+              "error-dim": "#b92902",
+              "primary-fixed": "#b9eeab",
+              "surface-container-highest": "#d3dcf9",
+              "outline-variant": "#a6adc1",
+              "on-secondary-fixed-variant": "#4e5869",
+              "on-tertiary-fixed-variant": "#006544",
+              "tertiary-fixed-dim": "#58e7ab",
+              "on-secondary": "#eef3ff",
+              "on-primary": "#d2ffc4",
+              "primary-container": "#b9eeab",
+              "surface-dim": "#c9d4f2",
+              "on-secondary-container": "#454f5f",
+              "on-error-container": "#520c00",
+              "surface-tint": "#386631",
+              "on-secondary-fixed": "#323c4c",
+              "on-surface-variant": "#545b6d",
+              "on-primary-container": "#2d5a27",
+              "surface-variant": "#d3dcf9",
+              "tertiary-dim": "#005c3d",
+              "inverse-surface": "#070e1d",
+              "inverse-on-surface": "#969db0",
+              "background": "#f5f6ff",
+              "primary-fixed-dim": "#abdf9e",
+              "surface-container-low": "#edf0ff",
+              "surface-bright": "#f5f6ff",
+              "on-primary-fixed-variant": "#376430",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#005a3c",
+              "secondary-container": "#d3ddf2",
+              "surface-container": "#e1e8ff",
+              "tertiary-fixed": "#69f6b8",
+              "on-tertiary": "#c8ffe0",
+              "on-background": "#282f3f",
+              "on-primary-fixed": "#1a4716",
+              "on-tertiary-fixed": "#00452d",
+              "secondary-dim": "#465061",
+              "surface": "#f5f6ff",
+              "error-container": "#f95630",
+              "secondary-fixed": "#d3ddf2",
+              "inverse-primary": "#b9eeab",
+              "outline": "#707789",
+              "on-error": "#ffefec",
+              "tertiary-container": "#69f6b8",
+              "secondary-fixed-dim": "#c5cfe3",
+              "on-surface": "#282f3f",
+              "surface-container-high": "#d9e2fd",
+              "secondary": "#525c6d",
+              "tertiary": "#006947"
+            },
+            fontFamily: {
+              "headline": ["Lexend"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 h-16 bg-[#f5f6ff] dark:bg-[#1a1c1e] z-50">
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[#d9e2fd]/50 transition-all active:scale-95 text-[#2D5A27] dark:text-[#b9eeab]">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-[#282f3f] dark:text-[#e2e2e6] text-lg">Player Profile</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="Close up portrait of a professional soccer coach" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwo6W4EFImixzq4tGQrqQ_5V_hVUwcsQSeHjDePoKaIGGIUWzOqr-lSIi64lOEdPoUyb48l7YDn8aqKxifeBoCwqRAnu7ixGSDXPMYdH4LW-nc2NdbfmR5Il7dsOxjnrknABG7p4krwbuoKiZD52XcpuVmMBFqfN9igK3-Ardx7ioTAbwXwuuB6IN6m7d_p9021dGeQYB9grFeJz4Ph5Z_-gQAA3VkPfkWiahBonV34rpTpmrUUJsF0abRKoAOS0_aPHrrP2EHIYk"/>
+</div>
+</header>
+<main class="pt-20 px-6 max-w-md mx-auto">
+<!-- Profile Picture Upload Section -->
+<section class="relative mb-12">
+<div class="flex justify-center">
+<div class="relative group">
+<div class="w-40 h-40 bg-surface-container-low rounded-xl overflow-hidden relative z-10 translate-x-2 -rotate-2">
+<img alt="Athletic soccer player profile" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" id="player-avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsZaI87XfE7JVj3Y9bXB8lwGmb7HP3KIjLlTBi5JQs98kTKxPEOdRuPZn3veIuQAbs1rhB_a_g8b8RYnoD-6JEe7pNS_tvqH2oO9Vx9lsLfPM-wjoh_rvBhmfhLuRf209io_kUFPUm9-e47_UZx47x35X1J9N9PjhYLs2w3YWvm2uPhgA_1kUlUDebjKVy__DGdY-N7V5DQFCocTRGLcg_RhCO1C9wv-cbfKkvyI8zLCuaZoX2FalO16CFey0rPc6qTM2D6MX5APU"/>
+</div>
+<div class="absolute inset-0 w-40 h-40 border-2 border-primary-fixed rounded-xl -translate-x-2 translate-y-2 z-0"></div>
+<button class="absolute -bottom-4 -right-2 z-20 w-12 h-12 bg-gradient-to-br from-primary to-primary-dim text-white rounded-full flex items-center justify-center shadow-lg active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="add_a_photo">add_a_photo</span>
+</button>
+</div>
+</div>
+<div class="text-center mt-8">
+<span class="font-headline font-black text-4xl uppercase tracking-tighter text-on-surface block">Nº 10</span>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-outline">New Entry</span>
+</div>
+</section>
+<!-- Player Form -->
+<form class="space-y-8">
+<!-- Personal Info -->
+<div class="space-y-4">
+<div class="relative">
+<label class="font-label text-[11px] font-medium tracking-wider uppercase text-outline-variant mb-1 block ml-1">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 font-body text-on-surface focus:ring-0 focus:bg-surface-container-lowest transition-all border-b-2 border-transparent focus:border-primary" placeholder="e.g. Marcus Sterling" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="relative">
+<label class="font-label text-[11px] font-medium tracking-wider uppercase text-outline-variant mb-1 block ml-1">Age</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 font-body text-on-surface focus:ring-0 focus:bg-surface-container-lowest transition-all border-b-2 border-transparent focus:border-primary" placeholder="24" type="number"/>
+</div>
+<div class="relative">
+<label class="font-label text-[11px] font-medium tracking-wider uppercase text-outline-variant mb-1 block ml-1">Nationality</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 font-body text-on-surface focus:ring-0 focus:bg-surface-container-lowest transition-all border-b-2 border-transparent focus:border-primary" placeholder="England" type="text"/>
+</div>
+</div>
+</div>
+<!-- Position Selection -->
+<div>
+<div class="flex justify-between items-center mb-4 ml-1">
+<label class="font-label text-[11px] font-medium tracking-wider uppercase text-outline-variant block">Primary &amp; Secondary Positions</label>
+<span class="font-label text-[10px] text-primary font-bold">Multiple Selection</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<label class="relative cursor-pointer group"><input class="sr-only peer" name="positions" type="checkbox" value="GK"/><div class="flex flex-col items-center justify-center py-3 bg-surface-container-low rounded-lg transition-all peer-checked:bg-primary-container peer-checked:border-primary border-2 border-transparent"><span class="font-headline font-black text-xs text-outline peer-checked:text-primary">GK</span><span class="font-label text-[8px] uppercase tracking-tighter text-outline-variant">Goalie</span></div></label>
+<label class="relative cursor-pointer group"><input class="sr-only peer" name="positions" type="checkbox" value="RB"/><div class="flex flex-col items-center justify-center py-3 bg-surface-container-low rounded-lg transition-all peer-checked:bg-primary-container peer-checked:border-primary border-2 border-transparent"><span class="font-headline font-black text-xs text-outline peer-checked:text-primary">RB</span><span class="font-label text-[8px] uppercase tracking-tighter text-outline-variant">Right Back</span></div></label>
+<label class="relative cursor-pointer group"><input class="sr-only peer" name="positions" type="checkbox" value="CB"/><div class="flex flex-col items-center justify-center py-3 bg-surface-container-low rounded-lg transition-all peer-checked:bg-primary-container peer-checked:border-primary border-2 border-transparent"><span class="font-headline font-black text-xs text-outline peer-checked:text-primary">CB</span><span class="font-label text-[8px] uppercase tracking-tighter text-outline-variant">Center Back</span></div></label>
+<label class="relative cursor-pointer group"><input class="sr-only peer" name="positions" type="checkbox" value="LB"/><div class="flex flex-col items-center justify-center py-3 bg-surface-container-low rounded-lg transition-all peer-checked:bg-primary-container peer-checked:border-primary border-2 border-transparent"><span class="font-headline font-black text-xs text-outline peer-checked:text-primary">LB</span><span class="font-label text-[8px] uppercase tracking-tighter text-outline-variant">Left Back</span></div></label>
+<label class="relative cursor-pointer group"><input class="sr-only peer" name="positions" type="checkbox" value="CDM"/><div class="flex flex-col items-center justify-center py-3 bg-surface-container-low rounded-lg transition-all peer-checked:bg-primary-container peer-checked:border-primary border-2 border-transparent"><span class="font-headline font-black text-xs text-outline peer-checked:text-primary">CDM</span><span class="font-label text-[8px] uppercase tracking-tighter text-outline-variant">Def Mid</span></div></label>
+<label class="relative cursor-pointer group"><input checked="" class="sr-only peer" name="positions" type="checkbox" value="CM"/><div class="flex flex-col items-center justify-center py-3 bg-surface-container-low rounded-lg transition-all peer-checked:bg-primary-container peer-checked:border-primary border-2 border-transparent"><span class="font-headline font-black text-xs text-outline peer-checked:text-primary">CM</span><span class="font-label text-[8px] uppercase tracking-tighter text-outline-variant">Central Mid</span></div></label>
+<label class="relative cursor-pointer group"><input checked="" class="sr-only peer" name="positions" type="checkbox" value="CAM"/><div class="flex flex-col items-center justify-center py-3 bg-surface-container-low rounded-lg transition-all peer-checked:bg-primary-container peer-checked:border-primary border-2 border-transparent"><span class="font-headline font-black text-xs text-outline peer-checked:text-primary">CAM</span><span class="font-label text-[8px] uppercase tracking-tighter text-outline-variant">Att Mid</span></div></label>
+<label class="relative cursor-pointer group"><input class="sr-only peer" name="positions" type="checkbox" value="RW"/><div class="flex flex-col items-center justify-center py-3 bg-surface-container-low rounded-lg transition-all peer-checked:bg-primary-container peer-checked:border-primary border-2 border-transparent"><span class="font-headline font-black text-xs text-outline peer-checked:text-primary">RW</span><span class="font-label text-[8px] uppercase tracking-tighter text-outline-variant">Right Wing</span></div></label>
+</div>
+</div>
+<!-- Tactical Attributes -->
+<div class="mb-8">
+<label class="font-label text-[11px] font-medium tracking-wider uppercase text-outline-variant mb-4 block ml-1">Tactical Attributes</label>
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col items-center justify-center relative overflow-hidden group">
+<svg class="w-full max-w-[240px] h-auto drop-shadow-sm transition-transform duration-500 hover:scale-105" viewbox="0 0 200 200">
+<polygon fill="none" points="100,20 169.3,60 169.3,140 100,180 30.7,140 30.7,60" stroke="#a6adc1" stroke-dasharray="2,2" stroke-width="0.5"></polygon>
+<polygon fill="none" points="100,60 134.6,80 134.6,120 100,140 65.4,120 65.4,80" stroke="#a6adc1" stroke-dasharray="2,2" stroke-width="0.5"></polygon>
+<line stroke="#a6adc1" stroke-width="0.5" x1="100" x2="100" y1="100" y2="20"></line>
+<line stroke="#a6adc1" stroke-width="0.5" x1="100" x2="169.3" y1="100" y2="60"></line>
+<line stroke="#a6adc1" stroke-width="0.5" x1="100" x2="169.3" y1="100" y2="140"></line>
+<line stroke="#a6adc1" stroke-width="0.5" x1="100" x2="100" y1="100" y2="180"></line>
+<line stroke="#a6adc1" stroke-width="0.5" x1="100" x2="30.7" y1="100" y2="140"></line>
+<line stroke="#a6adc1" stroke-width="0.5" x1="100" x2="30.7" y1="100" y2="60"></line>
+<polygon fill="rgba(56, 102, 49, 0.25)" points="100,32 148,72 162,131 100,144 48,128 44,72" stroke="#386631" stroke-linejoin="round" stroke-width="2.5"></polygon>
+<circle cx="100" cy="32" fill="#386631" r="3"></circle>
+<circle cx="148" cy="72" fill="#386631" r="3"></circle>
+<circle cx="162" cy="131" fill="#386631" r="3"></circle>
+<circle cx="100" cy="144" fill="#386631" r="3"></circle>
+<circle cx="48" cy="128" fill="#386631" r="3"></circle>
+<circle cx="44" cy="72" fill="#386631" r="3"></circle>
+<text class="font-label text-[10px] fill-on-surface font-bold uppercase" text-anchor="middle" x="100" y="15">PAC</text>
+<text class="font-label text-[10px] fill-on-surface font-bold uppercase" text-anchor="start" x="175" y="58">SHO</text>
+<text class="font-label text-[10px] fill-on-surface font-bold uppercase" text-anchor="start" x="175" y="148">PAS</text>
+<text class="font-label text-[10px] fill-on-surface font-bold uppercase" text-anchor="middle" x="100" y="192">DRI</text>
+<text class="font-label text-[10px] fill-on-surface font-bold uppercase" text-anchor="end" x="25" y="148">DEF</text>
+<text class="font-label text-[10px] fill-on-surface font-bold uppercase" text-anchor="end" x="25" y="58">PHY</text>
+</svg>
+</div>
+</div>
+<!-- Player Statistics Section (New) -->
+<div class="mb-8">
+<label class="font-label text-[11px] font-medium tracking-wider uppercase text-outline-variant mb-4 block ml-1">Player Statistics</label>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<!-- Goals -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="sports_soccer">sports_soccer</span>
+</div>
+<div>
+<p class="font-label text-[9px] uppercase tracking-widest text-outline">Goals</p>
+<input class="w-16 bg-transparent border-none p-0 font-headline font-black text-xl text-on-surface focus:ring-0" placeholder="0" type="number"/>
+</div>
+</div>
+<!-- Assists -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+</div>
+<div>
+<p class="font-label text-[9px] uppercase tracking-widest text-outline">Assists</p>
+<input class="w-16 bg-transparent border-none p-0 font-headline font-black text-xl text-on-surface focus:ring-0" placeholder="0" type="number"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<!-- Yellow Cards -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-yellow-400/10 flex items-center justify-center text-yellow-600">
+<span class="material-symbols-outlined" data-icon="rectangle" style="font-variation-settings: 'FILL' 1;">rectangle</span>
+</div>
+<div>
+<p class="font-label text-[9px] uppercase tracking-widest text-outline">Yellow Cards</p>
+<input class="w-16 bg-transparent border-none p-0 font-headline font-black text-xl text-on-surface focus:ring-0" placeholder="0" type="number"/>
+</div>
+</div>
+<!-- Red Cards -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-error/10 flex items-center justify-center text-error">
+<span class="material-symbols-outlined" data-icon="rectangle" style="font-variation-settings: 'FILL' 1;">rectangle</span>
+</div>
+<div>
+<p class="font-label text-[9px] uppercase tracking-widest text-outline">Red Cards</p>
+<input class="w-16 bg-transparent border-none p-0 font-headline font-black text-xl text-on-surface focus:ring-0" placeholder="0" type="number"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Days Injured -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+</div>
+<div class="text-center">
+<p class="font-label text-[9px] uppercase tracking-widest text-outline mb-1">Days Injured</p>
+<input class="w-full bg-transparent border-none p-0 font-headline font-black text-xl text-on-surface text-center focus:ring-0" placeholder="0" type="number" value="0"/>
+</div>
+</div>
+<!-- Matches Not Shown -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="visibility_off">visibility_off</span>
+</div>
+<div class="text-center">
+<p class="font-label text-[9px] uppercase tracking-widest text-outline mb-1">Matches Not Shown</p>
+<input class="w-full bg-transparent border-none p-0 font-headline font-black text-xl text-on-surface text-center focus:ring-0" placeholder="0" type="number" value="0"/>
+</div>
+</div>
+<!-- Matches Late -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div class="text-center">
+<p class="font-label text-[9px] uppercase tracking-widest text-outline mb-1">Matches Late</p>
+<input class="w-full bg-transparent border-none p-0 font-headline font-black text-xl text-on-surface text-center focus:ring-0" placeholder="0" type="number" value="0"/>
+</div>
+</div>
+<!-- Matches Not Present -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="person_off">person_off</span>
+</div>
+<div class="text-center">
+<p class="font-label text-[9px] uppercase tracking-widest text-outline mb-1">Not Present</p>
+<input class="w-full bg-transparent border-none p-0 font-headline font-black text-xl text-on-surface text-center focus:ring-0" placeholder="0" type="number" value="0"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Pro Ready Status -->
+<div class="grid grid-cols-1 mb-8">
+<div class="bg-primary-container p-4 rounded-xl flex flex-col justify-center items-center h-24">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-primary-container font-bold">Pro Ready Candidate</span>
+</div>
+</div>
+<!-- Save Action Area -->
+<div class="mb-4">
+<button class="w-full h-14 border-2 border-primary text-primary rounded-full font-headline font-bold text-sm uppercase tracking-widest shadow-sm active:scale-95 transition-all flex items-center justify-center gap-3 bg-transparent hover:bg-primary/5" type="button">
+<span class="material-symbols-outlined" data-icon="emergency_home">emergency_home</span>
+<span>Report Injury</span>
+</button>
+</div><div class="pt-4">
+<button class="w-full h-16 bg-gradient-to-r from-primary to-primary-dim text-white rounded-full font-headline font-bold text-lg shadow-xl active:scale-95 transition-all flex items-center justify-center gap-3" type="submit">
+<span>Save Player</span>
+<span class="material-symbols-outlined" data-icon="done_all">done_all</span>
+</button>
+</div>
+</form>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 dark:bg-[#1a1c1e]/70 backdrop-blur-xl shadow-[0px_-12px_32px_rgba(40,47,63,0.06)] rounded-t-[24px]">
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="groups">groups</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Teams</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#386631] to-[#b9eeab] text-white rounded-full px-5 py-1.5 active:scale-110 duration-200" href="#">
+<span class="material-symbols-outlined mb-0.5" data-icon="person_search" style="font-variation-settings: 'FILL' 1;">person_search</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Players</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Settings</span>
+</a>
+</nav>
+</body></html>

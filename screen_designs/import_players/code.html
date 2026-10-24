@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Import Players - The Pitch Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-dim": "#2d5927",
+                        "error": "#b02500",
+                        "primary": "#386631",
+                        "error-dim": "#b92902",
+                        "primary-fixed": "#b9eeab",
+                        "surface-container-highest": "#d3dcf9",
+                        "outline-variant": "#a6adc1",
+                        "on-secondary-fixed-variant": "#4e5869",
+                        "on-tertiary-fixed-variant": "#006544",
+                        "tertiary-fixed-dim": "#58e7ab",
+                        "on-secondary": "#eef3ff",
+                        "on-primary": "#d2ffc4",
+                        "primary-container": "#b9eeab",
+                        "surface-dim": "#c9d4f2",
+                        "on-secondary-container": "#454f5f",
+                        "on-error-container": "#520c00",
+                        "surface-tint": "#386631",
+                        "on-secondary-fixed": "#323c4c",
+                        "on-surface-variant": "#545b6d",
+                        "on-primary-container": "#2d5a27",
+                        "surface-variant": "#d3dcf9",
+                        "tertiary-dim": "#005c3d",
+                        "inverse-surface": "#070e1d",
+                        "inverse-on-surface": "#969db0",
+                        "background": "#f5f6ff",
+                        "primary-fixed-dim": "#abdf9e",
+                        "surface-container-low": "#edf0ff",
+                        "surface-bright": "#f5f6ff",
+                        "on-primary-fixed-variant": "#376430",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#005a3c",
+                        "secondary-container": "#d3ddf2",
+                        "surface-container": "#e1e8ff",
+                        "tertiary-fixed": "#69f6b8",
+                        "on-tertiary": "#c8ffe0",
+                        "on-background": "#282f3f",
+                        "on-primary-fixed": "#1a4716",
+                        "on-tertiary-fixed": "#00452d",
+                        "secondary-dim": "#465061",
+                        "surface": "#f5f6ff",
+                        "error-container": "#f95630",
+                        "secondary-fixed": "#d3ddf2",
+                        "inverse-primary": "#b9eeab",
+                        "outline": "#707789",
+                        "on-error": "#ffefec",
+                        "tertiary-container": "#69f6b8",
+                        "secondary-fixed-dim": "#c5cfe3",
+                        "on-surface": "#282f3f",
+                        "surface-container-high": "#d9e2fd",
+                        "secondary": "#525c6d",
+                        "tertiary": "#006947"
+                    },
+                    fontFamily: {
+                        "headline": ["Lexend"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pitch-gradient {
+            background: linear-gradient(135deg, #386631 0%, #b9eeab 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 h-16 bg-[#f5f6ff] dark:bg-[#1a1c1e] z-50">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#d9e2fd]/50 transition-all active:scale-95">
+<span class="material-symbols-outlined text-[#2D5A27] dark:text-[#b9eeab]">menu</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-[#282f3f] dark:text-[#e2e2e6] text-lg">The Pitch Editorial</h1>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="Coach Profile" class="w-full h-full object-cover" data-alt="professional portrait of a soccer coach in a modern athletic training jacket looking confident" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8srQ7Zu4nwcMQbc1nFDhleXlaYcIuzxZAAf113r39zT7NZGRrxZupFkotFGzWpapC4ln_Wb8yTZMyYn1oX4zzl_Rqr_DUkDyBRAAZMuSCynQALj-MrcpU5HJMmHfTLe3mAkbiHVspdg4-ZeoLcQqZB7_Y8Yxxzz88VkenySHvm_c0WLACvhVVGF2YC7EC8g_e-jjcH4JZJUXEwdc4u5jnF2WvWYjxAx8SoJo_-jh5uFGtxbSDw8_T4SrU4glJbdKecXw9mbYNEUI"/>
+</div>
+</header>
+<main class="pt-20 px-6 max-w-md mx-auto">
+<!-- Progress Indicator -->
+<section class="mb-8">
+<div class="flex justify-between items-end mb-3">
+<div>
+<span class="font-label text-xs font-semibold tracking-wider text-primary uppercase">Step 01</span>
+<h2 class="font-headline text-2xl font-extrabold text-on-surface leading-tight">Import Squad</h2>
+</div>
+<span class="font-headline text-3xl font-black text-primary-container/40">33%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-1/3 pitch-gradient rounded-full"></div>
+</div>
+<p class="mt-4 text-on-surface-variant font-body text-sm leading-relaxed">
+                Build your tactical foundation. Choose your preferred method to bring your athletes onto the pitch.
+            </p>
+</section>
+<!-- Import Options (Bento Style) -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Main Option: CSV (Asymmetric Large) -->
+<button class="col-span-2 relative overflow-hidden bg-surface-container-lowest rounded-xl p-6 flex flex-col items-start text-left shadow-[0px_12px_32px_rgba(40,47,63,0.06)] group hover:bg-surface-container-low transition-colors duration-300">
+<div class="pitch-gradient w-12 h-12 rounded-full flex items-center justify-center mb-4 text-white">
+<span class="material-symbols-outlined">upload_file</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Import from CSV</h3>
+<p class="font-label text-xs text-on-surface-variant mt-1 tracking-wide uppercase">Bulk Player Upload</p>
+<div class="absolute top-0 right-0 p-4 opacity-10 transform translate-x-4 -translate-y-4 group-hover:translate-x-2 transition-transform">
+<span class="material-symbols-outlined text-8xl">grid_on</span>
+</div>
+</button>
+<!-- Sync Contacts -->
+<button class="col-span-1 bg-surface-container-lowest rounded-xl p-5 flex flex-col items-start text-left shadow-[0px_12px_32px_rgba(40,47,63,0.06)] hover:bg-surface-container-low transition-colors duration-300">
+<div class="bg-secondary-container w-10 h-10 rounded-full flex items-center justify-center mb-3 text-on-secondary-container">
+<span class="material-symbols-outlined">sync</span>
+</div>
+<h4 class="font-headline text-base font-bold text-on-surface">Sync Contacts</h4>
+<p class="font-label text-[10px] text-on-surface-variant mt-1 uppercase">Local Address Book</p>
+</button>
+<!-- Add Manually -->
+<button class="col-span-1 bg-surface-container-lowest rounded-xl p-5 flex flex-col items-start text-left shadow-[0px_12px_32px_rgba(40,47,63,0.06)] hover:bg-surface-container-low transition-colors duration-300">
+<div class="bg-tertiary-container w-10 h-10 rounded-full flex items-center justify-center mb-3 text-on-tertiary-container">
+<span class="material-symbols-outlined">person_add</span>
+</div>
+<h4 class="font-headline text-base font-bold text-on-surface">Add Manually</h4>
+<p class="font-label text-[10px] text-on-surface-variant mt-1 uppercase">One-by-one Entry</p>
+</button>
+</div>
+<!-- Visual Context Card (Editorial Style) -->
+<section class="mt-8 relative h-48 bg-tertiary rounded-xl overflow-hidden">
+<div class="absolute inset-0 opacity-40 mix-blend-overlay">
+<div class="w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.2) 1px, transparent 0); background-size: 24px 24px;"></div>
+</div>
+<div class="relative z-10 p-6 flex flex-col h-full justify-between">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 glass-panel rounded-full flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-primary">info</span>
+</div>
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-label font-bold text-white tracking-widest uppercase">Pro Tip</span>
+</div>
+<div>
+<p class="font-headline text-lg font-bold text-white leading-tight">Download our CSV template for faster scouting reports.</p>
+<button class="mt-2 text-white/80 font-label text-xs underline underline-offset-4 hover:text-white transition-colors">GET TEMPLATE.CSV</button>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 w-32 h-32 opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-[120px] text-white">sports_soccer</span>
+</div>
+</section>
+<!-- Instructions Section -->
+<section class="mt-8 bg-surface-container-low rounded-xl p-6">
+<h5 class="font-headline text-sm font-bold text-on-surface-variant tracking-wider uppercase mb-4">Tactical Instructions</h5>
+<ul class="space-y-4">
+<li class="flex gap-4">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-container flex items-center justify-center text-[10px] font-black text-on-primary-container">1</div>
+<p class="text-sm text-on-surface-variant leading-snug">Ensure all player emails are unique for individual profile tracking.</p>
+</li>
+<li class="flex gap-4">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-container flex items-center justify-center text-[10px] font-black text-on-primary-container">2</div>
+<p class="text-sm text-on-surface-variant leading-snug">Positions and jersey numbers can be assigned after the initial import.</p>
+</li>
+</ul>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 dark:bg-[#1a1c1e]/70 backdrop-blur-xl rounded-t-[24px] shadow-[0px_-12px_32px_rgba(40,47,63,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] dark:hover:text-[#b9eeab] transition-colors active:scale-110 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">groups</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Teams</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] dark:hover:text-[#b9eeab] transition-colors active:scale-110 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">person_search</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Players</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#a6adc1] dark:text-[#8e9199] px-5 py-1.5 hover:text-[#2D5A27] dark:hover:text-[#b9eeab] transition-colors active:scale-110 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wider uppercase">Settings</span>
+</a>
+</nav>
+<!-- Contextual FAB (Suppressing as per mandate for task-focused page, but shown if essential for flow - following suppression rule for Detail/Transactional screens, we rely on the main bento choices instead) -->
+</body></html>

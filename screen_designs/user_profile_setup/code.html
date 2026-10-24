@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Account Settings | PitchMaster Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#005a3c",
+              "surface": "#f5f6ff",
+              "on-primary-fixed": "#1a4716",
+              "primary-fixed-dim": "#abdf9e",
+              "primary": "#386631",
+              "on-error": "#ffefec",
+              "error-container": "#f95630",
+              "surface-container-high": "#d9e2fd",
+              "on-tertiary": "#c8ffe0",
+              "background": "#f5f6ff",
+              "error-dim": "#b92902",
+              "surface-tint": "#386631",
+              "secondary": "#525c6d",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#b9eeab",
+              "on-tertiary-fixed-variant": "#006544",
+              "on-surface": "#282f3f",
+              "on-error-container": "#520c00",
+              "outline": "#707789",
+              "on-secondary-fixed-variant": "#4e5869",
+              "surface-bright": "#f5f6ff",
+              "tertiary-dim": "#005c3d",
+              "error": "#b02500",
+              "outline-variant": "#a6adc1",
+              "secondary-dim": "#465061",
+              "inverse-primary": "#b9eeab",
+              "secondary-fixed": "#d3ddf2",
+              "inverse-on-surface": "#969db0",
+              "tertiary-fixed": "#69f6b8",
+              "secondary-fixed-dim": "#c5cfe3",
+              "inverse-surface": "#070e1d",
+              "tertiary": "#006947",
+              "primary-dim": "#2d5927",
+              "surface-container-highest": "#d3dcf9",
+              "primary-container": "#b9eeab",
+              "tertiary-fixed-dim": "#58e7ab",
+              "on-secondary": "#eef3ff",
+              "on-surface-variant": "#545b6d",
+              "on-background": "#282f3f",
+              "surface-container": "#e1e8ff",
+              "surface-variant": "#d3dcf9",
+              "on-secondary-container": "#454f5f",
+              "surface-container-low": "#edf0ff",
+              "on-primary": "#d2ffc4",
+              "on-tertiary-fixed": "#00452d",
+              "on-primary-container": "#2d5a27",
+              "tertiary-container": "#69f6b8",
+              "on-secondary-fixed": "#323c4c",
+              "surface-dim": "#c9d4f2",
+              "secondary-container": "#d3ddf2",
+              "on-primary-fixed-variant": "#376430"
+            },
+            fontFamily: {
+              "headline": ["Lexend"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Lexend', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#f5f6ff] dark:bg-slate-950 flex items-center justify-between px-6 py-4 w-full sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-150 text-[#2D5A27] dark:text-emerald-500">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Lexend'] font-bold tracking-tight uppercase text-[#2D5A27] dark:text-emerald-500 text-lg">ACCOUNT</h1>
+</div>
+<div class="text-xl font-black text-[#282f3f] dark:text-slate-100 font-headline">PM PRO</div>
+</header>
+<main class="flex-grow px-6 pt-8 max-w-2xl mx-auto w-full">
+<!-- Profile Header / Image Upload Section -->
+<section class="relative mb-12 flex flex-col items-center">
+<div class="relative group">
+<div class="w-32 h-32 rounded-full overflow-hidden shadow-[0px_12px_32px_rgba(40,47,63,0.06)] bg-surface-container-low border-4 border-surface-container-lowest">
+<img alt="Coach Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional soccer coach in a black tracksuit, looking focused and authoritative with a stadium background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPrWrlS22l85UXG5gwi0fqrP9bt560bXzjCpHl0VlCbwheJpKcF_SAfpolEfta3h5X0OB6O57kdWXCEj_-Q4zH68kd966XLHwkQWtXCJ0nPrWLZm_9HOq-lq1tEvhchGHpEN4KGiLk_MjIGcr4IIMIwEMKLfGN_DtPwuzyG6G02FsGLAUYr4LGirxGWzl_nMef04896nwilNbFFDOIWSRh30QxEn6SI4jaQhCtZ5JiBwMCsCGJg5yDo5Mi8pgRejUf7_kMYRNli-c"/>
+</div>
+<button class="absolute bottom-0 right-0 bg-primary text-white p-2 rounded-full shadow-lg hover:scale-105 transition-transform active:scale-90">
+<span class="material-symbols-outlined text-sm" data-icon="edit" style="font-variation-settings: 'FILL' 1;">edit</span>
+</button>
+</div>
+<div class="mt-4 text-center">
+<h2 class="font-headline text-2xl font-extrabold text-on-surface tracking-tight">Marcus Sterling</h2>
+<p class="font-label text-on-surface-variant text-xs uppercase tracking-widest font-semibold mt-1">Lead Tactical Analyst</p>
+</div>
+</section>
+<!-- Account Credentials Form -->
+<div class="space-y-8">
+<!-- Bento-style Form Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Name Field -->
+<div class="bg-surface-container-low p-6 rounded-xl transition-all hover:bg-surface-container-lowest group">
+<label class="font-headline font-bold text-[10px] tracking-[0.1em] text-on-surface-variant uppercase mb-2 block">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 font-headline text-lg font-medium text-on-surface p-0 transition-colors" placeholder="Enter your name" type="text" value="Marcus Sterling"/>
+</div>
+<!-- Phone Field -->
+<div class="bg-surface-container-low p-6 rounded-xl transition-all hover:bg-surface-container-lowest group">
+<label class="font-headline font-bold text-[10px] tracking-[0.1em] text-on-surface-variant uppercase mb-2 block">Phone Number</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 font-headline text-lg font-medium text-on-surface p-0 transition-colors" placeholder="+00 000 000 000" type="tel" value="+44 20 7946 0123"/>
+</div>
+<!-- Email Field (Full Width) -->
+<div class="md:col-span-2 bg-surface-container-low p-6 rounded-xl transition-all hover:bg-surface-container-lowest group">
+<label class="font-headline font-bold text-[10px] tracking-[0.1em] text-on-surface-variant uppercase mb-2 block">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 font-headline text-lg font-medium text-on-surface p-0 transition-colors" placeholder="coach@example.com" type="email" value="m.sterling@pitchmasterpro.com"/>
+</div>
+</div>
+<!-- Management Section -->
+<div class="bg-surface-container-high/40 p-6 rounded-xl space-y-4">
+<h3 class="font-headline text-xs font-black uppercase tracking-widest text-on-surface-variant">Security &amp; Privacy</h3>
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="lock">lock</span>
+<span class="font-body text-sm font-medium">Change Password</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="verified_user">verified_user</span>
+<span class="font-body text-sm font-medium">Two-Factor Authentication</span>
+</div>
+<div class="w-10 h-5 bg-primary rounded-full relative">
+<div class="absolute right-1 top-1 w-3 h-3 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="pt-4 pb-12">
+<button class="w-full py-4 rounded-full bg-gradient-to-br from-[#386631] to-[#b9eeab] text-white font-headline font-extrabold text-lg tracking-tight shadow-[0px_12px_32px_rgba(56,102,49,0.2)] active:scale-[0.98] transition-all">
+                    Update Profile
+                </button>
+<button class="w-full mt-4 py-2 text-error font-headline font-bold text-xs uppercase tracking-widest opacity-70 hover:opacity-100 transition-opacity">
+                    Deactivate Account
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0px_-12px_32px_rgba(40,47,63,0.06)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center text-[#282f3f] dark:text-slate-400 opacity-60 p-2 hover:opacity-100 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="sports_soccer">sports_soccer</span>
+<span class="font-['Lexend'] text-[10px] font-medium tracking-[0.05em] uppercase mt-1">Pitch</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#282f3f] dark:text-slate-400 opacity-60 p-2 hover:opacity-100 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-['Lexend'] text-[10px] font-medium tracking-[0.05em] uppercase mt-1">Squad</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#282f3f] dark:text-slate-400 opacity-60 p-2 hover:opacity-100 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="strategy">strategy</span>
+<span class="font-['Lexend'] text-[10px] font-medium tracking-[0.05em] uppercase mt-1">Tactics</span>
+</a>
+<!-- Active Tab: Profile (Closest match to Account) -->
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#386631] to-[#b9eeab] text-white rounded-full p-3 scale-110 -translate-y-2 transition-all active:scale-90 duration-200 shadow-lg" href="#">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Lexend'] text-[10px] font-medium tracking-[0.05em] uppercase mt-0.5">Profile</span>
+</a>
+</nav>
+</body></html>
