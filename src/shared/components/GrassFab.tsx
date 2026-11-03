@@ -1,4 +1,4 @@
-import { Pressable } from 'react-native';
+import { Pressable, type ViewProps } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { StyleSheet, useUnistyles } from 'react-native-unistyles';
 
@@ -7,14 +7,23 @@ import { AppIcon } from './AppIcon';
 export type GrassFabProps = {
   icon?: string;
   onPress?: () => void;
+  accessibilityLabel?: string;
+  testID?: ViewProps['testID'];
 };
 
-export function GrassFab({ icon = 'add', onPress }: GrassFabProps) {
+export function GrassFab({
+  icon = 'add',
+  onPress,
+  accessibilityLabel,
+  testID,
+}: GrassFabProps) {
   const { theme } = useUnistyles();
 
   return (
     <Pressable
       accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel}
+      testID={testID}
       onPress={onPress}
       style={styles.hit}>
       <LinearGradient

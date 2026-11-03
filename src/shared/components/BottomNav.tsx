@@ -38,6 +38,7 @@ export function BottomNav({ items, activeId, onSelect }: BottomNavProps) {
               key={item.id}
               accessibilityRole="tab"
               accessibilityState={{ selected: active }}
+              aria-selected={active}
               onPress={() => onSelect(item.id)}
               style={styles.tabHit}>
               {active ? (
