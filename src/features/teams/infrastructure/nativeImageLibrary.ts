@@ -22,7 +22,15 @@ type ImagePickerNative = {
 function getImagePickerNative(): ImagePickerNative | null {
   // Resolve at call time (not at module load) so we never keep a stale null from
   // react-native-image-picker's eager TurboModuleRegistry snapshot.
-  return TurboModuleRegistry.get('ImagePicker') as ImagePickerNative | null;
+  // On web the registry export is missing, and calling get throws.
+  if (typeof TurboModuleRegistry?.get !== 'function') {
+    return null;
+  }
+  try {
+    return TurboModuleRegistry.get('ImagePicker') as ImagePickerNative | null;
+  } catch {
+    return null;
+  }
 }
 
 /**

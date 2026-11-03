@@ -1,20 +1,15 @@
+/**
+ * Unattended web smoke test.
+ * Installs Playwright's Chromium where a build exists, then runs the browser test.
+ * macOS 13 has no Playwright browser build; the config launches Google Chrome instead.
+ */
 const { execSync } = require('child_process');
-const fs = require('fs');
 const os = require('os');
-const { chromium } = require('@playwright/test');
 
 const darwinMajor = Number.parseInt(os.release().split('.')[0] ?? '', 10);
 const legacyMac = process.platform === 'darwin' && darwinMajor < 23;
 
-function chromiumInstalled() {
-  try {
-    return fs.existsSync(chromium.executablePath());
-  } catch {
-    return false;
-  }
-}
-
-if (!legacyMac && !chromiumInstalled()) {
+if (!legacyMac) {
   execSync('playwright install chromium', { stdio: 'inherit' });
 }
 

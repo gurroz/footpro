@@ -33,6 +33,7 @@ export function AppBar({
       <View style={styles.left}>
         <Pressable
           accessibilityRole="button"
+          accessibilityLabel={variant === 'back' ? 'Go back' : 'Open menu'}
           hitSlop={12}
           onPress={onLeftPress}
           style={styles.iconHit}>

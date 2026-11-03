@@ -26,7 +26,7 @@ import {
   TeamCard,
 } from '../../../shared/components';
 
-const SAMPLE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuB5phsKLhV42vehVz1eUziI4vej8FBW7vRR97b7QGALavPV3H4LrswuRWifNTS24JreexwJm3QX79EFLUH9sQtyp5nIId0uKHYel62HjL5WZWMKGllKw5MUd0ZSQ1-1s_1koQqIGsJI-9N-nCi2LoyIHRYpqq5kF5sCckdETcg8f-FuvHpR8TC36sXFR1TPZ2d7oMJGeI6b944yFsKyyjD6wXXgKwjnXJS1bWDjg4DI2G4KEsRVmuVnFN2AwrRxJERQ04T_4pGZ7q0';
+const playerPhoto = require('../../../assets/player.jpg');
 
 const NAV_ITEMS = [
   { id: 'teams', label: 'Teams', icon: 'group' },
@@ -95,7 +95,7 @@ export function HomeScreen() {
           <View style={styles.appBarRight}>
             <IconCircleButton icon="search" />
             <Image
-              source={{ uri: SAMPLE }}
+              source={playerPhoto}
               style={styles.avatarSm}
             />
           </View>
@@ -124,20 +124,20 @@ export function HomeScreen() {
           teamName="North Star Elite"
           playerLine="24 Players Active"
           rankLabel="#01"
-          logoSource={{ uri: SAMPLE }}
-          stackSources={[{ uri: SAMPLE }, { uri: SAMPLE }]}
+          logoSource={playerPhoto}
+          stackSources={[playerPhoto, playerPhoto]}
           extraCount={22}
         />
         <Text style={styles.sectionLabel}>PlayerPitchMarker</Text>
         <View style={styles.pitchRow}>
-          <PlayerPitchMarker source={{ uri: SAMPLE }} name="G. SMITH" size={48} ring />
+          <PlayerPitchMarker source={playerPhoto} name="G. SMITH" size={48} ring />
         </View>
         <Text style={styles.sectionLabel}>PlayerRowCard</Text>
         <PlayerRowCard
           name="Julian Draxler"
           subtitle="AMF • ATT 84 • FIT 92%"
           rating="8.4"
-          source={{ uri: SAMPLE }}
+          source={playerPhoto}
           formDots={2}
         />
         <PrimaryGradientButton title="Primary action" fullWidth />
@@ -148,7 +148,11 @@ export function HomeScreen() {
       </ScrollView>
       {tab === 'teams' ? (
         <View style={styles.fabWrap}>
-          <GrassFab onPress={openTeamCreation} />
+          <GrassFab
+            accessibilityLabel="Create team"
+            testID="create-team"
+            onPress={openTeamCreation}
+          />
         </View>
       ) : null}
       <BottomNav
